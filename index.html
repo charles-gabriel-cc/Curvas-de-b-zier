@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   	    <!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	    <!-- Compiled and minified JavaScript -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <title> Curvas De Bezier </title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="head">
+            <div class="left">
+                <label class="container">PONTOS
+                    <input type="checkbox" onclick="togglePoints()" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">POLIGONAL
+                    <input type="checkbox" onclick="togglePoligons()" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">CURVA
+                    <input type="checkbox" onclick="toggleCurve()" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+        
+            <a class="button" onclick="AddCurva()" >ADICIONAR CURVA </a>
+
+            <a class="button" onclick="RemoveCurva()" >DELETAR CURVA </a>
+
+            <a class="button" onclick="ChangeCurva()" >TROCAR CURVA </a>   </div>
+            
+
+        <div class="input-field col s6"> <input id="num_avaliacoes" placeholder="Numero de avaliações" type="text" class="validate"></div>
+
+        <canvas id="canvas" tabindex="1"></canvas>
+    </body>
+    <script src="script.js"></script>
+</html>
+
+
+
